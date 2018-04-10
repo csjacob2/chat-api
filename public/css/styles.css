@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Verdana, Geneva, sans-serif;
+}
+body .popover.username_empty {
+  top: -66px !important;
+}
+body .popover .popover-body {
+  text-align: center;
+}
+body #modal_login {
+  display: none;
+}
+body #modal_login .modal-dialog {
+  top: 25%;
+}
+body #modal_login .modal-dialog .modal-content {
+  border: none;
+}
+body #modal_login .modal-dialog .modal-content .modal-header {
+  display: none;
+}
+body #modal_login .modal-dialog .modal-content .modal-body {
+  padding-bottom: 5px;
+}
+body #modal_login .modal-dialog .modal-content .modal-body input[type="text"] {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  box-shadow: none;
+  padding-left: 10px;
+}
+body #modal_login .modal-dialog .modal-content .modal-body input[type="text"]::placeholder {
+  color: #333333;
+}
+body #modal_login .modal-dialog .modal-content .modal-footer {
+  border: none;
+  padding-top: 5px;
+}
+body #modal_login .modal-dialog .modal-content .modal-footer button.btn {
+  width: 100%;
+  background-color: red;
+  border: red;
+  height: 40px;
+}
+body #modal_login .modal-dialog .modal-content .modal-footer button.btn:active,
+body #modal_login .modal-dialog .modal-content .modal-footer button.btn:focus {
+  border-color: #FF4500;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 69, 0, 0.6);
+}
+body .modal-backdrop.show {
+  opacity: 1;
+  background-color: white;
+}
+body #modal_roomError .modal-header,
+body #modal_roomError .modal-footer {
+  border: none;
+}
+body #modal_roomError .modal-header button {
+  border: none;
+  box-shadow: none;
+}
+body #modal_roomError .modal-body p {
+  text-align: center;
+}
+body #chat_app {
+  display: flex;
+}
+body #chat_app .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+body #chat_app .roomlist {
+  flex: 20%;
+  height: 100vmin;
+  background-color: red;
+  color: white;
+  padding: 0;
+}
+body #chat_app .roomlist #userName {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0;
+  padding: 20px 20px 0 20px;
+}
+body #chat_app .roomlist .timeonline {
+  font-size: 12px;
+  padding: 0 20px;
+  display: block;
+}
+body #chat_app .roomlist .roomsmenu {
+  font-size: 16px;
+  padding: 20px 0 0 0;
+}
+body #chat_app .roomlist .roomsmenu .room {
+  width: 100%;
+  padding: 16px;
+}
+body #chat_app .roomlist .roomsmenu .room.selected {
+  background-color: maroon;
+  font-weight: bold;
+}
+body #chat_app .mainbody {
+  flex: 80%;
+  flex-direction: column;
+  display: flex;
+  height: 100vh;
+  min-height: 100vh;
+}
+body #chat_app .mainbody .header {
+  order: 1;
+  flex-shrink: 0;
+  flex-basics: 80px;
+  background-color: white;
+  border-bottom: 2px solid #999999;
+  color: #333333;
+}
+body #chat_app .mainbody .header p {
+  width: 100%;
+  text-align: center;
+}
+body #chat_app .mainbody .header p.roomName {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 20px 0 20px;
+}
+body #chat_app .mainbody .header p.chatters {
+  height: 20px;
+}
+body #chat_app .mainbody .header p.chatters .thisisme {
+  color: red;
+  font-weight: bold;
+}
+body #chat_app .mainbody .chatbox {
+  order: 2;
+  overflow-y: scroll;
+  height: auto;
+  background-color: #ededed;
+  flex-direction: column;
+  padding: 10px 0 0 20px;
+  flex: auto;
+}
+body #chat_app .mainbody .chatbox .excessMessages {
+  text-align: center;
+}
+body #chat_app .mainbody .chatbox .message.body {
+  max-width: 50%;
+  font-size: 12px;
+  padding-bottom: 20px;
+  margin-right: auto;
+}
+body #chat_app .mainbody .chatbox .message.body .text {
+  background-color: #fff;
+  border-radius: 25px;
+  height: fit-content;
+  width: fit-content;
+  padding: 10px;
+}
+body #chat_app .mainbody .chatbox .message.body .user {
+  padding-top: 5px;
+}
+body #chat_app .mainbody .chatbox .message.body.thisisme {
+  margin: 0 0 0 auto;
+}
+body #chat_app .mainbody .chatbox .message.body.thisisme .text {
+  background-color: red;
+  color: white;
+  margin: 0 10px 0 auto;
+}
+body #chat_app .mainbody .chatbox .message.body.thisisme .user {
+  display: none;
+}
+body #chat_app .mainbody .footer {
+  order: 3;
+  flex-shrink: 0;
+  height: fit-content;
+  border-top: 2px solid #999999;
+  align-items: center;
+  display: flex;
+  padding: 15px;
+}
+body #chat_app .mainbody .footer input[type="text"]#chat_message {
+  width: 85%;
+  height: 40px;
+  outline: none;
+  box-shadow: none;
+  padding-left: 10px;
+  flex: none;
+}
+body #chat_app .mainbody .footer input[type="text"]#chat_message::placeholder {
+  color: #333333;
+}
+body #chat_app .mainbody .footer button#send_message {
+  font-weight: bold;
+  color: cornflowerblue;
+  width: fit-content;
+  font-size: 20px;
+  flex: auto;
+  background: none;
+}
+body #chat_app .mainbody .footer button#send_message:active,
+body #chat_app .mainbody .footer button#send_message:focus {
+  color: darkblue;
+  border: none;
+  box-shadow: none;
+}
+body #chat_app .mainbody .footer button#send_message.disabled {
+  color: grey;
+}

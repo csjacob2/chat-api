@@ -1,0 +1,6 @@
+{{#each this}}
+    <div class="message body" id="message_{{id}}">
+        <div class="text">{{message}}</div>
+        <div class="user user_{{name}}">{{name}}</div>
+    </div>
+{{/each}}

@@ -1,0 +1,29 @@
+{
+  "name": "frontend-project",
+  "version": "1.0.0",
+  "description": "Chat Room API Frontend Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve ./public",
+    "api-server": "node server.js"
+  },
+  "engines": {
+    "node": ">=7.0.0"
+  },
+  "author": "Ryan Gonzalez",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "~1.0.1",
+    "express": "~4.0.0",
+    "grunt": "^1.0.2",
+    "grunt-browserify": "^5.2.0",
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "serve": "^3.1.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "shortid": "^2.2.8"
+  }
+}
